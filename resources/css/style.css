@@ -65,7 +65,7 @@ img {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    width: 30%;
+    width: 40%;
 }
 
 h1 {
@@ -94,4 +94,50 @@ h2 {
 .quote-source {
     margin-top: 32px;
     color: black;
+}
+
+.right-2 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    padding-top: 32px;
+    border: 1px solid;
+    border-color: transparent transparent transparent #DCDCDC;
+    
+}
+
+.right-2-box {
+    display: flex;
+    padding: 16px 16px 16px 32px;
+    border: 1px solid;
+    border-color: #DCDCDC transparent #DCDCDC #DCDCDC;
+}
+
+#first-box {
+    padding-top: 0;
+    border-top-color: transparent;
+}
+
+#last-box {
+    background-color: lightgray;
+    border-color: transparent;
+}
+
+.right-2-box a {
+    color: lightskyblue;
+}
+
+.box-img {
+    width: 35%;
+    height: auto;
+}
+
+.box-content {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 16px;
 }
