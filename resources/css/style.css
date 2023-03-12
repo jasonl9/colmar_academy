@@ -1,5 +1,7 @@
-* {
+*, html, body, header {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
 }
 
 /** header **/
@@ -10,6 +12,8 @@ header {
     z-index: 1;
     opacity: 1;
     background-color: white;
+    font-size: 1.25rem;
+    height: 64px;
 }
 
 .navbar {
@@ -37,17 +41,19 @@ header {
     gap: 16px;
 }
 
-/** section 1**/
-.section-1 {
-    margin-top: 64px;
+/** section 1 **/
+.section {
     display: flex;
+}
+
+#section-1 {
+    margin-top: 64px;
     background-color: #DCDCDC;
-    padding: 32px 24px;
 }
 
 .left {
     width: 60%;
-    margin: 0 12px;
+    margin: 32px 24px;
 }
 
 img {
@@ -55,7 +61,6 @@ img {
 }
 
 .right {
-    margin-left: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +80,18 @@ h2 {
 
 .button {
     width: 100%;
-    padding: 8px auto;
+    padding: 8px;
     background-color: gray;
     color: white;
+    text-align: center;
+}
+
+/** section 2 **/
+.left h1 {
+    margin: 32px 0 24px 0;
+}
+
+.quote-source {
+    margin-top: 32px;
+    color: black;
 }
