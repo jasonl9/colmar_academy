@@ -70,6 +70,7 @@ img {
     justify-content: center;
     gap: 1rem;
     width: 40%;
+    padding-right: 16px;
 }
 
 h1 {
@@ -173,7 +174,7 @@ h2 {
 
 .course img {
     height: auto;
-    width: 35%;
+    width: 100%;
 }
 
 .course-content {
@@ -254,12 +255,13 @@ h2 {
 
 /** footer **/
 .footer {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     padding: 16px 24px 48px 24px;
+    width: 100%;
 }
 
-.footer-right {
+#footer-right {
     display: flex;
     gap: 8px;
 }
