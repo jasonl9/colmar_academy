@@ -111,7 +111,6 @@ header {
     }
 }
 
-
 img {
     width: 100%;
 }
@@ -144,50 +143,87 @@ h2 {
     color: black;
 }
 
-.right-2 {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-
-    padding-top: 32px;
-    border: 1px solid;
-    border-color: transparent transparent transparent #DCDCDC;
-    
-}
-
-.right-2-box {
-    display: flex;
-    padding: 16px 16px 16px 32px;
-    border: 1px solid;
-    border-color: #DCDCDC transparent #DCDCDC #DCDCDC;
-}
-
 #first-box {
     padding-top: 0;
     border-top-color: transparent;
-}
-
-.gray {
-    background-color: lightgray;
-    border-color: transparent;
 }
 
 .right-2-box a {
     color: lightskyblue;
 }
 
-.box-img {
-    width: 35%;
-    height: auto;
+/** responsive design **/
+@media only screen and (min-width: 720px) {
+    .right-2 {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        padding-top: 32px;
+        border: 1px solid;
+        border-color: transparent transparent transparent #DCDCDC;
+    }
+
+    .right-2-box {
+        display: flex;
+        padding: 16px 16px 16px 32px;
+        border: 1px solid;
+        border-color: #DCDCDC transparent #DCDCDC #DCDCDC;
+    }
+
+    .box-img {
+        width: 35%;
+        height: auto;
+    }
+    
+    .box-content {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        margin: 0 16px;
+    }
+    
+    .gray {
+        background-color: lightgray;
+        border-color: transparent;
+    }    
 }
 
-.box-content {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-    margin: 0 16px;
+@media only screen and (max-width: 720px) {
+    .section-a .left {
+        display: none;
+    }
+
+    .right-2 {
+        padding-top: 16px;
+        border: 1px solid;
+        border-color: transparent transparent transparent #DCDCDC;
+    }
+
+    .right-2-box {
+        padding: 16px 16px 0 16px;
+    }
+
+    .box-img {
+        height: auto;
+    }
+    
+    .box-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 1rem 0 3rem 1rem;
+    }
+
+    #last-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        padding: 1rem 0 2rem 1rem;
+    }
 }
 
 /** section 3 courses **/
