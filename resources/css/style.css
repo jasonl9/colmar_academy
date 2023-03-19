@@ -259,7 +259,7 @@ h2 {
 .course-content {
     padding:16px 24px;
     background-color: white;
-    height: 150px;
+    height: 180px;
 }
 
 .course-p {
@@ -269,6 +269,43 @@ h2 {
 .course p {
     color: lightslategray;
 }
+
+/** responsive design **/
+@media only screen and (max-width: 910px) {
+    .course-content {
+        padding:16px 24px;
+        background-color: white;
+        height: 210px;
+    }
+}
+
+@media only screen and (min-width: 785px) {
+    .small-2 {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 785px) {
+    .large-2 {
+        display: none;
+    }
+
+    #section-3 {
+        background-color: transparent;
+    }
+
+    .section-b {
+        padding: 32px 16px 24px 16px;
+    }
+}
+
+.catelog-2 h2 {
+    background-color: lightgray;
+    padding: 24px 16px 24px 16px;
+    margin-bottom: 8px;
+}
+
 
 /** section 4 **/
 .section-c {
